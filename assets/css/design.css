@@ -68,6 +68,7 @@ footer
 #contact img
 {
 	opacity: 0.8;
+	width: 35px;
 }
 
 #contact img:hover
@@ -109,7 +110,7 @@ footer
 {
 	margin: 0 auto;
 	width: 60%;
-	margin-top: 30px;
+	margin-top: 35px;
 }
 
 .thumbnail:hover
