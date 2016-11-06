@@ -1,0 +1,52 @@
+# Welcome to Jekyll!
+#
+# This config file is meant for settings that affect your whole blog, values
+# which you are expected to set up once and rarely edit after that. If you find
+# yourself editing these this file very often, consider using Jekyll's data files
+# feature for the data you need to update frequently.
+#
+# For technical reasons, this file is *NOT* reloaded automatically when you use
+# 'jekyll serve'. If you change this file, please restart the server process.
+
+# Site settings
+# These are used to personalize your new site. If you look in the HTML files,
+# you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
+# You can create any custom variable you would like, and they will be accessible
+# in the templates via {{ site.myvariable }}.
+title: Web and video game developer - Donovan Orhan
+email: dono.orhan@gmail.com
+description: My personal website with my work.
+keywords: "developer, nantes, freelance, développeur, sites, projects, portfolio, website, design, nantes, video game, graphics, unity3D, html5 games"
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "http://www.dorhan.fr" # the base hostname & protocol for your site
+twitter_username: _dorhan
+github_username:  DonoSybrix
+
+# Build settings
+markdown: kramdown
+theme: minima
+
+# Collecions
+collections:
+  projects:
+    output: true
+
+# Plugins
+gems:
+  - jekyll-assets
+  - jekyll-sitemap
+
+assets:
+  compress:
+    css: true
+    js: true
+  sources:
+    - _assets/css
+    - _assets/img
+    - _assets/js
+    - _assets/fonts
+  features:
+    liquid: false
+    integrity: false
+    automatic_img_size: true
+    automatic_img_alt : true

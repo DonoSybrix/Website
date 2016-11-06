@@ -1,161 +1,21 @@
-<!DOCTYPE html>
-<html lang="en">
-    <head>
-        <title>Donovan Orhan - Web/Mobile/C++ and Graphics programer</title>
-        <meta name="Description" content="My personal website with my work :)">
-        <meta name="Keywords" content="projects, portfolio, website, c++, design, nantes, video game, graphics">
-        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/css/bootstrap.min.css">
-        <link href="./assets/css/design.css" rel="stylesheet">
-        <link href='http://fonts.googleapis.com/css?family=Cabin' rel='stylesheet' type='text/css'>
+---
+layout: home
+---
 
-        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
-        <link href='./assets/css/bootstrap-social.css' type='text/css'>
-        <meta charset="utf-8">
-    </head>
-    <body>
-
-        <header id="header">
-            <div id="main">
-            </div>
-
-            <div id="who">   
-                <div class="wrapper">
-                    <h1><span class="name">Donovan</span> Orhan</h1>
-                    <h2>Developer Web/Mobile/C++ and 2D/3D</h2>
-                    <p>
-                        I'm Dono, a french programmer from Nantes.<br /> Most of my knowledge is self-taught, consisting of skills I acquired while working on various project.<br />
-    I'm working with various technologies on various platforms.
-                    </p>
-
-                </div>
-            </div>
-
-        </header>
-
-        <section id="contact">
-
-        <p>Feel free to get in touch with me via one the social network bellow if you prefer.</p>
-
-            <a href="https://www.facebook.com/dono.sybrix">
-            <img src="./assets/img/icon_facebook.png" alt="Facebook" />
-            </a>
-
-            <a href="https://github.com/DonoSybrix">
-            <img src="./assets/img/icon_github.png" alt="GitHub" />
-            </a>
-
-            <a href="https://twitter.com/Dono_SxG">
-            <img src="./assets/img/icon_twitter.png" alt="Twitter" />
-            </a>
-
-            <a href="https://plus.google.com/u/0/107745162928340925436/posts">
-            <img src="./assets/img/icon_google.png" alt="Google +" />
-            </a>
-
-            <a href="https://www.youtube.com/channel/UC_8JBvfZritEfmoQZiHo5vQ">
-            <img src="./assets/img/icon_youtube.png" alt="Youtube" />
-            </a>
-
-            <div class="separation"></div>
-        </section>
-
-        <section id="projects">
-
-            <div class="row">
-
-                <div class="col-xs-6 col-md-4">
-                    <a href="http://www.foxrushthegame.com/" class="thumbnail">
-                        <img src="./assets/img/foxrush.jpg" alt="Fox Rush">
-                    </a>
-                </div>
-
-                <div class="col-xs-6 col-md-4">
-                <a href="http://www.foxfender.com/" class="thumbnail">
-                    <img src="./assets/img/foxfender.jpg" alt="Fox Fender">
+<div class="projects">
+    <div class="grid">
+        {% assign projects = site.projects | sort: "order" %}
+        {% for project in projects %}
+        {% assign name = project.images.first %}
+            {% if project.show == true %}
+                <a href="{{ project.website }}" class="card {% if project.primary == false %}hidden-project{% endif %}">
+                    <figure>
+                        <img src="{{ base }}/assets/img/{{ name }}" alt="{{ name }} image"/>
+                        <figcaption>{{ project.title }}</figcaption>
+                    </figure>
                 </a>
-                </div>
-
-                <div class="col-xs-6 col-md-4">
-                <a href="https://github.com/DonoSybrix" class="thumbnail">
-                    <img src="./assets/img/smash2D.png" alt="Smash 2D">
-                </a>
-                </div>
-
-                <div class="col-xs-6 col-md-4">
-                <a href="#" class="thumbnail">
-                    <img src="./assets/img/sxengine.png" alt="SXFramework">
-                </a>
-                </div>
-
-                <div class="col-xs-6 col-md-4">
-                <a href="http://www.amoursucre.com/" class="thumbnail">
-                    <img src="./assets/img/mycandylove.png" alt="MyCandyLove">
-                </a>
-                </div>
-
-                <div class="col-xs-6 col-md-4">
-                <a href="https://www.youtube.com/watch?v=1X1PWbentJw" class="thumbnail">
-                    <img src="./assets/img/ruedufric.png" alt="Rue du fric">
-                </a>
-                </div>
-
-                <div class="col-xs-6 col-md-4">
-                <a href="https://github.com/DonoSybrix/PhysicEngine" class="thumbnail">
-                    <img src="./assets/img/physicengine.png" alt="2D Physic engine">
-                </a>
-                </div>
-
-                <div class="col-xs-6 col-md-4">
-                <a href="#" class="thumbnail">
-                    <img src="./assets/img/etudegestyl.png" alt="Etude Gestyl">
-                </a>
-                </div>
-
-                <div class="col-xs-6 col-md-4">
-                <a href="http://www.sybrix.fr" class="thumbnail">
-                    <img src="./assets/img/sybrix.jpg" alt="Sybrix">
-                </a>
-                </div>
-
-                <div class="col-xs-6 col-md-4">
-                <a href="http://www.foxrushthegame.com/" class="thumbnail">
-                    <img src="./assets/img/foxrush_website.jpg" alt="Fox Rush: Website">
-                </a>
-                </div>
-
-                <div class="col-xs-6 col-md-4">
-                <a href="https://github.com/DonoSybrix" class="thumbnail">
-                    <img src="./assets/img/musicmanager.png" alt="Music Manager">
-                </a>
-                </div>
-
-                <div class="col-xs-6 col-md-4">
-                <a href="#" class="thumbnail">
-                    <img src="./assets/img/myuml.png" alt="UML manager">
-                </a>
-                </div>
-
-                <div class="col-xs-6 col-md-4">
-                <a href="http://htmlpreview.github.io/?https://github.com/DonoSybrix/PathEditor/blob/master/index.html" class="thumbnail">
-                    <img src="./assets/img/patheditor.png" alt="Path Editor">
-                </a>
-                </div>
-
-                <div class="col-xs-6 col-md-4">
-                <a href="https://github.com/DonoSybrix" class="thumbnail">
-                    <img src="./assets/img/simca.png" alt="Simca">
-                </a>
-                </div>
-
-            </div>
-
-        </section>
-
-        <footer>
-            <a href="#header"><span class="glyphicon glyphicon-chevron-up" aria-hidden="true"></span></a>        
-        </footer>
-
-        <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.4/js/bootstrap.min.js"></script>
-    </body>
-</html>
+            {% endif %}
+        {% endfor %}
+    </div>
+    <button type="button" class="more-projects">See more projects</button>
+</div>
