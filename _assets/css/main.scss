@@ -33,12 +33,31 @@ header
 {
     position: relative;
     width: 100%;
-    height: 150px;
-    background: #42c0e5; /* Old browsers */
-    background: -moz-linear-gradient(left,  #42c0e5 0%, #28a2d9 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(left,  #42c0e5 0%,#28a2d9 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(to right,  #42c0e5 0%,#28a2d9 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    height: 175px;
+    background: linear-gradient(to right, #56CCF2 0%, #2F80ED 100%);
+    animation: changeColor 0s ease infinite;
 }
+
+@keyframes changeColor {
+    0%{background-position:0% 50%}
+    50%{background-position:100% 50%}
+    100%{background-position:0% 50%}
+}
+
+header.color_1 { background: linear-gradient(to right, #56CCF2 0%, #2F80ED 100%); }
+header.color_2 { background: linear-gradient(to right, #F2994A 0%, #F2C94C 100%); }
+header.color_3 { background: linear-gradient(to right, #EB5757 0%, #F2C94C 100%); }
+header.color_4 { background: linear-gradient(to right, #D66D75 0%, #E29587 100%); }
+header.color_5 { background: linear-gradient(to right, #56CCF2 0%, #2F80ED 100%); }
+header.color_6 { background: linear-gradient(to right, #20002c 0%, #cbb4d4 100%); }
+header.color_7 { background: linear-gradient(to right, #4568DC 0%, #B06AB3 100%); }
+header.color_8 { background: linear-gradient(to right, #FFAFBD 0%, #ffc3a0 100%); }
+header.color_9 { background: linear-gradient(to right, #DCE35B 0%, #45B649 100%); }
+header.color_10 { background: linear-gradient(to right, #2C3E50 0%, #4CA1AF 100%); }
+header.color_11 { background: linear-gradient(to right, #FF5F6D 0%, #FFC371 100%); }
+header.color_12 { background: linear-gradient(to right, #36D1DC 0%, #5B86E5 100%); }
+
+header
 
 header canvas
 {
