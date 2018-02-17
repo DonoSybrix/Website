@@ -10,7 +10,7 @@ layout: home
             {% if project.show == true %}
                 <a href="{{ project.website }}" class="card {% if project.primary == false %}hidden-project{% endif %}">
                     <figure>
-                        <img src="{{ base }}/assets/img/{{ name }}" alt="{{ name }} image"/>
+                        <img data-src="{% asset '{{ name }}' @path %}" alt="{{ name }} image" width="250" height="170"><br>
                         <figcaption>{{ project.title }}</figcaption>
                     </figure>
                 </a>

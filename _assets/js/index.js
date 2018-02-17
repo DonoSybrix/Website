@@ -1,5 +1,8 @@
 document.addEventListener('DOMContentLoaded', function() 
 {
+    var myLazyLoad = new LazyLoad();
+    var scroll = new SmoothScroll('a[href*="#"]');
+
     var moreButtons = document.getElementsByClassName('more-projects');
     for (var i = 0; i < moreButtons.length; i++) 
     {

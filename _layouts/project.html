@@ -20,7 +20,7 @@ route: project
 {% endfor %}
 
 {% for image in page.images %}
-    <img src="{{ image }}" alt="{{ page.title }} illustration N°{{ forloop.index}} " />
+    <img data-src="{% asset '{{ image }}' @path %}" alt="{{ page.title }} illustration N°{{ forloop.index}}" width="250" height="170"><br>
 {% endfor %}
 
 {% for video in page.videos %}

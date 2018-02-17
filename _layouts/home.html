@@ -4,39 +4,39 @@ layout: default
 
 {% include intro.html %}
 
-<section id="work" class="grey-area">
+<section data-scroll id="work" class="grey-area">
     <h2 class="title">My work</h2>
     <hr>
     {{ content }}
 </section>
 
-<section id="tools" class="white-area">
+<section data-scroll id="tools" class="white-area">
     <h2 class="title">Tools & skills</h2>
     <hr>
-    <p>I've worked on many projects with many tools, here are my favorites.<br> If you want to know my skills take a look on <a href="{{ base }}/assets/cv_english.pdf">my resume</a>. Of course I like to learn new stuff too!</p>
+    <p>I've worked on many projects with many tools, here are my favorites.<br> If you want to know more about me take a look at <a href="{% asset cv_english.pdf @path %}">my resume</a>. Of course I like to learn new stuff too!</p>
     <div class="logos">
     	<a href="https://laravel.com">
-    		<img src="{{ base }}/assets/img/laravel.png" alt="Laravel Logo" /><br>
+    		<img data-src="{% asset laravel.png @path %}" alt="Laravel Logo" width="80" height="90"><br>
     		Laravel
     	</a>
     	<a href="https://lumen.laravel.com/">
-    		<img src="{{ base }}/assets/img/lumen.png" alt="Lumen Logo" /><br>
+    		<img data-src="{% asset lumen.png @path %}" alt="Lumen Logo" width="80" height="90"><br>
     		Lumen
     	</a>
     	<a href="https://vuejs.org">
-    		<img src="{{ base }}/assets/img/vue.png" alt="VueJS Logo" /><br>
+    		<img data-src="{% asset vue.png @path %}" alt="VueJS Logo" width="80" height="90"><br>
     		VueJS
     	</a>
     	<a href="https://unity3d.com">
-    		<img src="{{ base }}/assets/img/unity3D.png" alt="Unity 3D Logo" /><br>
+    		<img data-src="{% asset unity3D.png @path %}" alt="Unity 3D Logo" width="80" height="90"><br>
     		Unity 3D
     	</a>
     	<a href="http://esotericsoftware.com">
-    		<img src="{{ base }}/assets/img/spine.png" alt="Spine Logo" /><br>
+    		<img data-src="{% asset spine.png @path %}" alt="Spine Logo" width="80" height="90"><br>
     		Spine
     	</a>
     	<a href="http://www.adobe.com/fr/products/photoshop.html">
-    		<img src="{{ base }}/assets/img/photoshop.png" alt="Photoshop Logo" /><br>
+    		<img data-src="{% asset photoshop.png @path %}" alt="Photoshop Logo" width="80" height="90"><br>
     		Photoshop
     	</a>
     </div>
